@@ -15,7 +15,7 @@ public class Delfino extends Animal implements INuotante {
 
     @Override
     public void mangia() {
-        System.out.println("Acciughe" + "Sardine");
+        System.out.println("Acciughe e Sardine");
     }
 
     @Override
