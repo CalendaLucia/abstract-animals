@@ -1,8 +1,9 @@
 package org.learning.java;
 
 import org.learning.java.abstraction.Animal;
+import org.learning.java.abstraction.IVolante;
 
-public class Passerotto extends Animal {
+public class Passerotto extends Animal implements IVolante {
 
     public Passerotto(String name, String tipo) {
         super(name,tipo);
@@ -19,4 +20,11 @@ public class Passerotto extends Animal {
     public void mangia() {
         System.out.println("Vermi");
     }
+
+    @Override
+    public void vola() {
+        System.out.println("volando!!");
+    }
+
+
 }

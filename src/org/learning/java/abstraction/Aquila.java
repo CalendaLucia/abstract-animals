@@ -1,6 +1,6 @@
 package org.learning.java.abstraction;
 
-public class Aquila extends Animal{
+public class Aquila extends Animal implements IVolante {
 
     public Aquila(String name, String tipo) {
         super(name,tipo);
@@ -15,5 +15,11 @@ public class Aquila extends Animal{
     @Override
     public void mangia() {
         System.out.println("Vermi e Salmone");
+    }
+
+
+    @Override
+    public void vola() {
+        System.out.println("volando!!");
     }
 }
