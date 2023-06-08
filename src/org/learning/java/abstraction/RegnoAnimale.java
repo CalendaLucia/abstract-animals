@@ -14,10 +14,10 @@ public class RegnoAnimale {
         regno[3] = new Delfino("Giorgio", "delfino");
 
         for (Animal animale : regno) {
-            System.out.println(animale.getName());
-            System.out.println("è un " + animale.getClass().getSimpleName() + " e mangia ");
+            System.out.print(animale.getName());
+            System.out.print(" è un " + animale.getTipo() + " e mangia ");
             animale.mangia();
-            System.out.println("Il suo verso è");
+            System.out.print("Il suo verso è ");
             animale.verso();
             System.out.print("Ora sta ");
 
@@ -42,6 +42,8 @@ public class RegnoAnimale {
     public static void faiNuotare(INuotante animale) {
         animale.nuota();
     }
+
+
 
 
 
